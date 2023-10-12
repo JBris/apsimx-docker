@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+
+  apsimx:
+    image: ubuntu:${UBUNTU_TAG}
+    build:
+      args:
+        UBUNTU_TAG: $UBUNTU_TAG
+        APSIM_VERSION: $APSIM_VERSION
