@@ -22,7 +22,7 @@ RUN apt-get update \
 
 RUN apt-get update \
     && apt -y install --no-install-recommends /tmp/ApsimSetup.deb \
-    && chmod +x /usr/local/bin/* 
+    && chmod a+x /usr/local/bin/Models
 
 RUN rm -rf /tmp/ApsimSetup.deb /tmp/packages-microsoft-prod.deb \
     && apt-get clean \
